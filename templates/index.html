@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Auto-Translator Config</title>
+</head>
+<body>
+    <h1>Twitter Auto-Translator Configuration</h1>
+    <form method="POST">
+        <label for="consumer_key">Consumer Key:</label><br>
+        <input type="text" id="consumer_key" name="consumer_key" value="{{ config['CONSUMER_KEY'] }}"><br><br>
+        
+        <label for="consumer_secret">Consumer Secret:</label><br>
+        <input type="text" id="consumer_secret" name="consumer_secret" value="{{ config['CONSUMER_SECRET'] }}"><br><br>
+        
+        <label for="access_token">Access Token:</label><br>
+        <input type="text" id="access_token" name="access_token" value="{{ config['ACCESS_TOKEN'] }}"><br><br>
+        
+        <label for="access_token_secret">Access Token Secret:</label><br>
+        <input type="text" id="access_token_secret" name="access_token_secret" value="{{ config['ACCESS_TOKEN_SECRET'] }}"><br><br>
+        
+        <label for="target_account">Target Account:</label><br>
+        <input type="text" id="target_account" name="target_account" value="{{ config['TARGET_ACCOUNT'] }}"><br><br>
+        
+        <label for="cron_schedule">Cron Schedule:</label><br>
+        <input type="text" id="cron_schedule" name="cron_schedule" value="{{ config['CRON_SCHEDULE'] }}"><br><br>
+        
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
